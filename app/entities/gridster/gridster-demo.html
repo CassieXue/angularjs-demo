@@ -1,0 +1,45 @@
+<div class="gridster-demo-container">
+    <div gridster="gridsterOpts">
+        <ul>
+            <li gridster-item="item" ng-repeat="item in two" class="grid-item-style">
+                <!--<p>起始坐标点(row, col): ({{item.row}}, {{item.col}})</p>-->
+                <!--<div>(sizeX,sizeY):({{item.sizeX}},{{item.sizeY}})</div>-->
+                <div class="chart-header">chart name</div>
+                <div class="chart-box abso">
+                    <div class="item-chart abso" style="top:40px;bottom:20px;left:20px;right:20px">
+                        <div ng-if="item.content" my-e-chart></div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+<!--<p>standardItems: gridster-item='item'</p>
+<div gridster>
+    <ul>
+        <li gridster-item="item" ng-repeat="item in standardItems" class="grid-item-style">
+            <p>起始坐标点(row, col): ({{item.row}}, {{item.col}})</p>
+            <p>(sizeX,sizeY):({{item.sizeX}},{{item.sizeY}})</p>
+            <h4>{{item.content}}</h4>
+        </li>
+    </ul>
+</div>
+<p>customItems, gridster-item,row,col,size-x,size-y</p>
+<div gridster>
+    <ul>
+        <li gridster-item row="item.position[0]" col="item.position[1]"
+            size-x="item.size.x" size-y="item.size.y" ng-repeat="item in customItems" class="grid-item-style">
+            {{item.content}}
+        </li>
+    </ul>
+</div>
+<p>data-gridster-item</p>
+<div data-gridster>
+    <ul>
+        <li data-gridster-item data-row="item.position[0]" data-col="item.position[1]"
+            data-sizex="item.size.x" data-sizey="item.size.y" ng-repeat="item in customItems" class="grid-item-style">
+            <h4>{{item.content}}</h4>
+        </li>
+    </ul>
+</div>-->
+</div>

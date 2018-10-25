@@ -1,0 +1,9 @@
+<p>This is the partial for view 2.</p>
+<p>$rootscope version_: {{version_}}</p>
+<p>
+  使用自定义的'interpolate' 过滤器:
+  {{ 'Current version is v%VERSION%.' | interpolate }}
+</p>
+<p>angualrjs提供$interpolate服务，可用将一个字符串编译成一个插值函数。HTML编译服务使用这个服务完成数据绑定</p>
+
+<div>Angular seed app: v<span app-version></span></div>

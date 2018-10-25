@@ -1,0 +1,68 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 1px solid black;
+  margin: 0;
+  padding: 15px 0;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+/* style */
+.oa{
+  overflow: auto;
+}
+.abso{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.page-header{
+  position: fixed;
+  top:0;
+  z-index: 10;
+  width: 100%;
+  background-color: bisque;
+}
+.page-content{
+  padding-top: 53px;
+  height: calc(100vh - 53px);
+}
+.gridster-demo-container{
+  height: 100%;
+  background: rgba(232, 235, 237, 0.96);
+  overflow-x: auto;
+}
+.gridster-demo-container .gridster{
+  min-width: 980px;
+}
+.grid-item-style:hover{
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.1), 0 16px 24px 0 rgba(170,182,206,.36);
+}
+.grid-item-style{
+  padding: 15px;
+  border: 1px solid #ddd;
+  cursor: move;
+  background-color:#fff;
+}
+.grid-item-style h4{
+  text-align: center;
+}
