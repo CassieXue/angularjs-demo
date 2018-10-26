@@ -4,36 +4,13 @@
     angular.module('myApp.views')
         .controller('GridSterDemoController',['$scope', '$timeout','$window',function($scope, $timeout,$window) {
 
-            var pageload = {
-                name: 'page.load',   //图例name
-                datapoints: [   //数据
-                    { x: 2001, y: 1012 },
-                    { x: 2002, y: 1023 },
-                    { x: 2003, y: 1045 },
-                    { x: 2004, y: 1062 },
-                    { x: 2005, y: 1032 },
-                    { x: 2006, y: 1040 },
-                    { x: 2007, y: 1023 },
-                    { x: 2008, y: 1090 },
-                    { x: 2009, y: 1012 },
-                    { x: 2010, y: 1012 },
-                ]
-            };
-            $scope.config = {
-                title: 'Line Chart',     // chart title
-                debug: true,
-                showXAxis: true,     //是否显示X轴
-                showYAxis: true,     //是否显示Y轴
-                showLegend: true,    //是否显示图例
-                stack: false,
-            };
             $scope.two = [
                 { sizeX: 6, sizeY: 4, row: 0, col: 0 },
                 { sizeX: 4, sizeY: 3, row: 0, col: 6 }
             ];
             var timer = $timeout(function(){
                 for(var i=0; i<$scope.two.length; i++){
-                    $scope.two[i].content = [pageload];
+                    $scope.two[i].content = [];
                 }
             }, 1000);
 
@@ -90,7 +67,5 @@
                     stop: function(event, $element, widget) {}
                 }
             };
-
-            $scope.data1 = [ pageload ];
     }]);
 })();
