@@ -1,9 +1,42 @@
-<p>This is the partial for view 2.</p>
+<p>spinner loading...</p>
 <p>$rootscope version_: {{version_}}</p>
 <p>
   使用自定义的'interpolate' 过滤器:
   {{ 'Current version is v%VERSION%.' | interpolate }}
 </p>
 <p>angualrjs提供$interpolate服务，可用将一个字符串编译成一个插值函数。HTML编译服务使用这个服务完成数据绑定</p>
+<div id="ng-global-spinner" class="spinner">
+  <div class="blob blob-0"></div>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <div class="blob blob-4"></div>
+  <div class="blob blob-5"></div>
+</div>
+<div class="cs-loader spinner">
+    <div class="cs-loader-inner">
+        <label> ●</label>
+        <label> ●</label>
+        <label> ●</label>
+        <label> ●</label>
+        <label> ●</label>
+        <label> ●</label>
+    </div>
+</div>
+<p>box-shadow实践：</p>
+<div class="horizontal-flex mb-20">
+    <div class="shadow-div v-0">v=0</div>
+    <div class="shadow-div v-3">v=3px</div>
+    <div class="shadow-div v-inset-3">v=3px inset</div>
+    <div class="shadow-div v-3-">v=-3px</div>
+    <div class="shadow-div v-inset-3-">v=-3px inset</div>
+</div>
+<div class="horizontal-flex">
+    <div class="shadow-div h-0">h=0</div>
+    <div class="shadow-div h-3">h=3px</div>
+    <div class="shadow-div h-inset-3">h=3px inset</div>
+    <div class="shadow-div h-3-">h=-3px</div>
+    <div class="shadow-div h-inset-3-">h=-3px inset</div>
+</div>
 
 <div>Angular seed app: v<span app-version></span></div>

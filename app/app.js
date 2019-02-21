@@ -9,8 +9,8 @@ angular.module('myApp', [
     'gridster',
     'myApp.views',
     'myApp.version'
-]).config(['$locationProvider', '$routeProvider', '$stateProvider','$urlRouterProvider',
-    function($locationProvider, $routeProvider, $stateProvider, $urlRouterProvider) {
+]).config(['$locationProvider', '$routeProvider',
+    function($locationProvider, $routeProvider) {
        /* var hashPrefix = '!',  //默认前缀!, 生成地址格式：http://localhost:8000/#!/view1
         html5Mode = {
          enabled: false,   //默认false,hashbang模式
@@ -20,29 +20,6 @@ angular.module('myApp', [
 
     $locationProvider.html5Mode(false).hashPrefix('');  //设置为hashbang模式，无前缀http://localhost:8000/#/view1
 
-    $urlRouterProvider.otherwise('/state2');
-    // ui-router state配置
-    $stateProvider.state('state1',{
-        url: "/state1",
-        templateUrl: "view1/view1.html",
-        controller: 'View1Ctrl'
-    }).state('state2',{
-        url: "/state2",
-        templateUrl: 'view2/view2.html',
-        controller: 'View2Ctrl'
-    }).state('state3',{
-        url: '/infinite-scroll',
-        templateUrl: 'entities/infinite-scroll/infinite-scroll-demo.html',
-        controller: 'infiniteScrollDemoCtrl'
-    }).state('state4',{
-        url: '/gridster-demo',
-        templateUrl: 'entities/gridster/gridster-demo.html',
-        controller: 'GridSterDemoController'
-    }).state('state5',{
-        url: '/line',
-        templateUrl: 'entities/echarts/charts-demo.html',
-        controller: 'lineChartDemo'
-    });
     // 使用ng-route配置路径
     // $routeProvider
     // .when('/view1', {

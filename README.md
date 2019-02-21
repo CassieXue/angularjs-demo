@@ -231,15 +231,22 @@ etc to function properly when an HTML page is opened via the `file://` scheme in
 The `angular-seed` project comes preconfigured with a local development web server. It is a Node.js
 tool called [http-server][http-server]. You can start this web server with `npm start`, but you may
 choose to install the tool globally:
-
+全局安装本地开发web服务器http-server:
 ```
 sudo npm install -g http-server
 ```
 
 Then you can start your own development web server to serve static files from a folder by running:
-
+启动http-server(参数-a是监听地址，参数-p是修改监听端口)
 ```
 http-server -a localhost -p 8000
+```
+```
+http-server ./app -a localhost -p 8000 -c-1 -o
+默认web目录是当前目录，想改变web目录的话，可以在命令后面加上本地路径，如：
+http-server <path_of_project>
+-o 启动服务器后打开浏览器窗口
+-c 最大缓存时间单位秒，例如-c10表示最大缓存时间10秒，-c-1禁止缓存
 ```
 
 Alternatively, you can choose to configure your own web server, such as Apache or Nginx. Just

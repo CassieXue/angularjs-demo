@@ -10,8 +10,10 @@
   <title>My AngularJS App</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="static/font-awesome-4.7.0/css/font-awesome.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="static/css/template.css">
   <link rel="stylesheet" href="app.css">
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
   <link rel="stylesheet" href="bower_components/angular-gridster/dist/angular-gridster.min.css"/>
@@ -21,17 +23,19 @@
     <!--<li><a href="#/view1">view1</a></li>-->
     <!--<li><a href="#/view2">view2</a></li>-->
     <li><a ui-sref="state1">echarts</a></li>
-    <li><a ui-sref="state2">state2</a></li>
+    <li><a ui-sref="state2">css 实践</a></li>
     <li><a ui-sref="state3">infinite-scroll</a></li>
     <li><a ui-sref="state4">grid-ster</a></li>
-    <li><a ui-sref="state5">line chart</a></li>
+    <li><a ui-sref="state5">angular-echarts</a></li>
+    <li><a ui-sref="footer-sticky">footer-sticky</a></li>
   </ul>
 
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
-  <!--<div ng-view></div>-->
+  <!--<div ng-view>使用ng-route配置路径$routeProvider.when()</div>-->
   <div ui-view class="page-content"></div>
+  <footer class="footer">这是页面底部</footer>
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
@@ -47,6 +51,7 @@
   <script src="bower_components/angular-gridster/src/angular-gridster.js"></script>
 
   <script src="app.js"></script>
+  <script src="app.state.js"></script>
   <script src="view1/view1.js"></script>
   <script src="view2/view2.js"></script>
   <script src="entities/infinite-scroll/infinite-scroll-demo.controller.js"></script>
